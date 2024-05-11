@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="Stylesheet_main.css" />
+    <link rel="stylesheet" href="Primary_page_responsive.css" />
+    <title>Static Template</title>
+    <script
+      src="https://kit.fontawesome.com/3d2c03c680.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- my navbar -->
+    <nav class="navigation-bar">
+      <!-- This div is for title and logo image -->
+      <div class="title-logo-div">
+        <!-- This is an inner div for logo image -->
+        <div class="logo-image">
+          <img
+            src="https://play-lh.googleusercontent.com/lMyQnaK9ectXavRDuVyaODbiFJu6G_n_oTpResYUNVoDLOSZfGyfYWA1iBxnt_3dbKM"
+          />
+        </div>
+
+        <!-- this is an inner div for title -->
+        <div class="title-div">
+          <h6>Music</h6>
+          <h4>Studio</h4>
+        </div>
+      </div>
+
+      <!-- This is Favourities text -->
+      <div class="favourites">
+        <h4>Favourites</h4>
+      </div>
+
+      <!-- This div is for search bar -->
+      <div class="search-bar">
+        <!-- magnifying-glass search icon -->
+        <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <!-- This the input tag for search-bar -->
+        <input type="text" name="search" placeholder="       Search" />
+
+        <!-- this div is for mic icon -->
+        <div class="mic-icon">
+          <i class="fa-solid fa-microphone-lines"></i>
+        </div>
+      </div>
+
+      <!-- This is for notification bell -->
+      <div class="notification-bell">
+        <i class="fa-sharp fa-solid fa-bell fa-lg"></i>
+      </div>
+
+      <!-- This div is for profile picture -->
+      <div class="profile-pic">
+        <img
+          src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+        />
+      </div>
+    </nav>
+    <!-- Nav-bar is completed here -->
+
+    <!-- There will be two aside section inside the main section for the first half of the page and other aside section to  show the songs on the queue that is the queue section -->
+
+    <!-- This is first aside section inside the main section -->
+<main> 
+    <aside class="aside section-1">
+      <section>
+      <div class="outer-carousel">
+        <div class="carousel">
+          <!-- There are three images in this crousel -->
+
+          <img
+            src="https://i.scdn.co/image/ab67616d00001e027b9639babbe96e25071ec1d4"
+          />
+
+          <img
+            src="https://d1z8f6hd2x3zqi.cloudfront.net/wp-content/uploads/2016/03/zayn-altcover-1457035490.jpg"
+          />
+
+          <img
+            src="https://i.scdn.co/image/ab6761610000e5eb8ae7f2aaa9817a704a87ea36"
+          />
+        </div>
+      </div>
+      </section>
+      <!-- This is latest release div -->
+      <section>
+      <div class="latest-release">
+        <h1 style="margin-bottom: 12px; color: whitesmoke; font-size: 20px;">
+          Latest Release
+        </h1>
+      </div>
+
+      <!-- This is the content div for latest release section  -->
+      <!-- It will contain cards -->
+      <div class="latest-release-content">
+        <!-- First Card -->
+        <div class="card">
+          <div>
+            <img
+              src="https://i.scdn.co/image/ab6761610000e5eb8ae7f2aaa9817a704a87ea36"
+            />
+
+            <div class="play-button">
+              <i
+                class="fa-solid fa-play"
+                style="width: 45%; height: 45%; display: inline-block;"
+              ></i>
+            </div>
+          </div>
+
+          <!-- This div will contain song name and date of release -->
+          <div class = "song-description">
+            <h3>Stay</h3>
+            <p>April 29 2023</p>
+          </div>
+
+          <!-- This div will contain the three dots after clicking which the user will find options to play , add to queue, add to playlist and get info -->
+
+          <div class="options">
+            <label for = "latest-release-checkbox"> 
+                <i class="fa-solid fa-ellipsis"></i> 
+            </label>
+            <input type= "checkbox" id= "latest-release-checkbox">
+            <div class="latest-release-dropdown">
+              <div class="drop-item">
+                <!-- if user clicks on the three dots button then it will redirect user to single playlist page -->
+                <p><i class="fa-solid fa-play"></i><a href="Single_playlist_screen.html" >Play Now</a></p>
+              </div>
+              <hr>
+              <div class="drop-item">
+                  <!-- if user clicks on the three dots button then it will redirect user to single playlist page -->
+                  <p><i class="fa-regular fa-plus"></i>Add to Queue</p>
+                </div>
+                <hr>
+                <div class="drop-item">
+                    <!-- if user clicks on the three dots button then it will redirect user to single playlist page -->
+                    <p><i class="fa-sharp fa-solid fa-heart"></i>Add to Favourites</p>
+                  </div>
+                  <hr>
+                  <div class="drop-item">
+                      <!-- if user clicks on the three dots button then it will redirect user to single playlist page -->
+                      <p><i class="fa-solid fa-circle-info"></i>Get info</p>
+                    </div>
+                    
+            </div>
+
+            <!-- Duration of the song -->
+            <p class="song-duration">
+              3:35
+            </p>
+          </div>
+          
+
+        </div>
+
+        <!-- Second Card -->
+        <div class="card">
+            <div>
+              <img
+                src="https://i.pinimg.com/550x/87/2f/cc/872fcc80e3b4564f91cdfa93ee39e39c.jpg"
+              />
+  
+              <div class="play-button">
+                <i
+                  class="fa-solid fa-play"
+                  style="width: 45%; height: 45%; display: inline-block;"
+                ></i>
+              </div>
+            </div>
+  
+            <!-- This div will contain song name and date of release -->
+            <div class = "song-description">
+              <h3>Willow</h3>
+              <p>April 29 2023</p>
+            </div>
+  
+            <!-- This div will contain the three dots after clicking which the user will find options to play , add to queue, add to playlist and get info -->
+  
+            <div class="options">
+              <label for = "latest-release-checkbox2"> 
+                  <i class="fa-solid fa-ellipsis"></i> 
+              </label>
+              <input type= "checkbox" id ="latest-release-checkbox2">
+              <div class="latest-release-dropdown">
+                <div class="drop-item">
+                  <!-- if user clicks on the three dots button then it will redirect user to single playlist page -->
+                  <p><i class="fa-solid fa-play"></i><a href="Single_playlist_screen.html" >Play Now</a></p>
+                </div>
+                <hr>
+                <div class="drop-item">
+                    <!-- if user clicks on the three dots button then it will redirect user to single playlist page -->
+                    <p><i class="fa-regular fa-plus"></i>Add to Queue</p>
+                  </div>
+                  <hr>
+                  <div class="drop-item">
+                      <!-- if user clicks on the three dots button then it will redirect user to single playlist page -->
+                      <p><i class="fa-sharp fa-solid fa-heart"></i>Add to Favourites</a></p>
+                    </div>
+                    <hr>
+                    <div class="drop-item">
+                        <!-- if user clicks on the three dots button then it will redirect user to single playlist page -->
+                        <p><i class="fa-solid fa-circle-info"></i>Get info</p>
+                      </div>
+                      
+              </div>
+  
+              <!-- Duration of the song -->
+              <p class="song-duration">
+                3:35
+              </p>
+            </div>
+            
+  
+          </div>
+
+          <!-- Third Card -->
+        <div class="card">
+            <div>
+              <img
+                src="https://i.pinimg.com/originals/d4/41/27/d44127792cd6a47e5b327345f539cbcc.jpg"
+              />
+  
+              <div class="play-button">
+                <i
+                  class="fa-solid fa-play"
+                  style="width: 45%; height: 45%; display: inline-block;"
+                ></i>
+              </div>
+            </div>
+  
+            <!-- This div will contain song name and date of release -->
+            <div class = "song-description">
+              <h3>Willow</h3>
+              <p>April 29 2023</p>
+            </div>
+  
+            <!-- This div will contain the three dots after clicking which the user will find options to play , add to queue, add to playlist and get info -->
+  
+            <div class="options">
+              <label for = "latest-release-checkbox3"> 
+                  <i class="fa-solid fa-ellipsis"></i> 
+              </label>
+              <input type= "checkbox" id ="latest-release-checkbox3">
+              <div class="latest-release-dropdown">
+                <div class="drop-item">
+                  <!-- if user clicks on the three dots button then it will redirect user to single playlist page -->
+                  <p><i class="fa-solid fa-play"></i><a href="Single_playlist_screen.html" >Play Now</a></p>
+                </div>
+                <hr>
+                <div class="drop-item">
+                    <!-- if user clicks on the three dots button then it will redirect user to single playlist page -->
+                    <p><i class="fa-regular fa-plus"></i>Add to Queue</p>
+                  </div>
+                  <hr>
+                  <div class="drop-item">
+                      <!-- if user clicks on the three dots button then it will redirect user to single playlist page -->
+                      <p><i class="fa-sharp fa-solid fa-heart"></i>Add to Favourites</p>
+                    </div>
+                    <hr>
+                    <div class="drop-item">
+                        <!-- if user clicks on the three dots button then it will redirect user to single playlist page -->
+                        <p><i class="fa-solid fa-circle-info"></i>Get info</p>
+                      </div>
+                      
+              </div>
+  
+              <!-- Duration of the song -->
+              <p class="song-duration">
+                3:35
+              </p>
+            </div>
+            
+  
+          </div>
+
+          <!-- Fourth Card -->
+        <div class="card">
+            <div>
+              <img
+                src="https://media.pitchfork.com/photos/5c1aaaabe35c444aebf1afb3/1:1/w_600/sick%20boy_the%20chainsmokers.jpg"
+              />
+  
+              <div class="play-button">
+                <i
+                  class="fa-solid fa-play"
+                  style="width: 45%; height: 45%; display: inline-block;"
+                ></i>
+              </div>
+            </div>
+  
+            <!-- This div will contain song name and date of release -->
+            <div class = "song-description">
+              <h3>Willow</h3>
+              <p>April 29 2023</p>
+            </div>
+  
+            <!-- This div will contain the three dots after clicking which the user will find options to play , add to queue, add to playlist and get info -->
+  
+            <div class="options">
+              <label for = "latest-release-checkbox4"> 
+                  <i class="fa-solid fa-ellipsis"></i> 
+              </label>
+              <input type = "checkbox" id ="latest-release-checkbox4">
+              <div class="latest-release-dropdown">
+                <div class="drop-item">
+                  <!-- if user clicks on the three dots button then it will redirect user to single playlist page -->
+                  <p><i class="fa-solid fa-play"></i><a href="Single_playlist_screen.html">Play Now</a></p>
+                </div>
+                <hr>
+                <div class="drop-item">
+                    <!-- if user clicks on the three dots button then it will redirect user to single playlist page -->
+                    <p><i class="fa-regular fa-plus"></i>Add to Queue</p>
+                  </div>
+                  <hr>
+                  <div class="drop-item">
+                      <!-- if user clicks on the three dots button then it will redirect user to single playlist page -->
+                      <p><i class="fa-sharp fa-solid fa-heart"></i>Add to Favourites</p>
+                    </div>
+                    <hr>
+                    <div class="drop-item">
+                        <!-- if user clicks on the three dots button then it will redirect user to single playlist page -->
+                      <p><i class="fa-solid fa-circle-info"></i>Get info</p>
+                      </div>
+                      
+              </div>
+  
+              <!-- Duration of the song -->
+              <p class="song-duration">
+                3:35
+              </p>
+            </div>
+        </div>
+          </div>
+      </section>
+          <!-- This is for popular artists section -->
+          <section>
+          <div class="popular-artists">
+
+            <h1>Popular Artists</h1>
+
+            <!-- if the user clicks on any of the artists he or she will be redirected to single artists playlist page -->
+            <!-- following is the list of artists -->
+<div class="popular-artists-content">
+
+            <!-- First artists -->
+          
+            <a href="Single playlist screen.html">
+              <div>
+                <img src="https://www.rollingstone.com/wp-content/uploads/2022/08/Rolling-Stone-Harry-Styles-Cover-Story-2022-3.jpg">
+
+                <div> <i
+                  class="fa-solid fa-play"></i>
+                </div>
+                <p>
+                  Harry Styles
+                </p>
+              </div>
+            </a>
+
+            <!-- Second artist-->
+            <a href="Single playlist screen.html">
+                <div>
+                  <img src="https://i.scdn.co/image/ab6761610000e5eb3c02f4fb4cc9187c488afd50">
+  
+                  <div> <i
+                    class="fa-solid fa-play"></i>
+                  </div>
+                  <p>
+                  Chainsmokers
+                  </p>
+                </div>
+              </a>
+
+              <!-- Third artist -->
+              <a href="Single playlist screen.html">
+                  <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTOzSub1el7IyDr8nJeSjBhGTVO99NbpWM-w&usqp=CAU">
+    
+                    <div> <i
+                      class="fa-solid fa-play"></i>
+                    </div>
+                    <p>
+                      Zayn Malik
+                    </p>
+                  </div>
+                </a>
+
+                <!-- Fourth artist -->
+                <a href="Single playlist screen.html">
+                    <div>
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbPYMc1tutk1CFbLLvhmjiwTPhc_I4izoemGABjApgKl_ydN3FX96YCRtQABqTL7qUhRQ&usqp=CAU">
+      
+                      <div> <i
+                        class="fa-solid fa-play"></i>
+                      </div>
+                      <p>
+                        ColdPlay
+                      </p>
+                    </div>
+                  </a>
+
+                  <!-- Fifth artist -->
+                  <a href="Single playlist screen.html">
+                      <div>
+                        <img src="https://i.guim.co.uk/img/media/8aac28c34fdce2b8c020d0d960e90158d4df1153/0_113_2674_1604/master/2674.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=6d7d5a31ce4da443f7cb030dbc5f5750">
+        
+                        <div> <i
+                          class="fa-solid fa-play"></i>
+                        </div>
+                        <p>
+                          Chris Brown
+                        </p>
+                      </div>
+                    </a>
+
+                    <!-- Sixth artist -->
+                    <!-- <a href="Single playlist screen.html">
+                        <div>
+                          <img src="https://www.rollingstone.com/wp-content/uploads/2022/08/Rolling-Stone-Harry-Styles-Cover-Story-2022-3.jpg">
+          
+                          <div> <i
+                            class="fa-solid fa-play"></i>
+                          </div>
+                          <p>
+                            Harry Styles
+                          </p>
+                        </div>
+                      </a> -->
+
+          </div>
+          </div>
+</section>
+          <!-- This div is for music theme section -->
+          <section>
+          <div class="music-themes">
+          <!-- This div is for stations section of the website -->
+          <section>
+          <div class= "stations">
+            <div id="div1">
+              <div id="div2">
+                <div id="div3">
+                  <img src="https://img.freepik.com/premium-vector/vector-vinyl-record-isolated-transparent-background-vinyl-record-png-old-cds-music-png_156846-1917.jpg?w=2000">
+                  <p>Stations</p>
+                </div>
+              </div>
+            </div>
+          </div>
+</section>
+
+          <!-- This div is for the main part of the theme with song types  -->
+          <section>
+          <div class="main-theme">
+            <!-- first song type "love" -->
+            <div class="song-types">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT31bVPeT6lIxLcoT1ROmW18uW6XMAwc5gwag&usqp=CAU">
+              <p>Love</p>
+            </div>
+
+            <!-- second song type "retro" -->
+            <div class="song-types">
+                <img src="https://images.freeimages.com/cme/images/previews/3aa/material-retro-music-theme-vector-15966.jpg">
+                <p>Retro</p>
+              </div>
+
+          <!-- Third song type "chill" -->
+          <div class="song-types">
+              <img src="https://i.pinimg.com/736x/6e/37/10/6e371009e6f9142534f4232081a81ee6.jpg">
+              <p>Chill</p>
+            </div>
+
+            <!-- fourth song type "workout" -->
+            <div class="song-types">
+                <img src="https://i1.sndcdn.com/artworks-aBXJgBpHy6oICJiS-1CxgSw-t500x500.jpg">
+                <p>Workout</p>
+              </div>
+
+              <!-- Fifth song type "rock" -->
+              <div class="song-types">
+                  <img src="https://img.freepik.com/premium-vector/stylish-vector-template-printing-theme-rock-music-with-calligraphic-inscription-rock-n-roll_643070-742.jpg?w=200">
+                  <p>Rock</p>
+                </div>
+
+                <!-- sixth song type "pop" -->
+                <div class="song-types">
+                    <img src="https://media.istockphoto.com/id/1250232184/vector/abstract-illustration-of-a-doodling-on-the-theme-of-music-rock-pop-jazz-headphones-and.jpg?s=612x612&w=0&k=20&c=SlvG-UQyYXOh5X-de2EGx4XSNGpp25GaPI70_CqF0CM=">
+                    <p>Pop</p>
+                  </div>
+          </div>
+          </section>
+          </div>
+        </section>
+          <!-- This is another theme section of electronic road trip and party -->
+          <section>
+          <div class="music-theme-2">
+            <!-- the outer div -->
+            <div class="outer-div">
+              <!-- the inner div -->
+              <div class="inner-div">
+                <span>Party</span>
+              </div>
+            </div>
+
+            <!-- second outer and inner divs -->
+            <div class="outer-div">
+                <!-- the inner div -->
+                <div class="inner-div">
+                  <span>Electronic</span>
+                </div>
+              </div>
+
+              <!-- third outer and inner divs -->
+              <div class="outer-div">
+                  <!-- the inner div -->
+                  <div class="inner-div">
+                    <span>Road Trip</span>
+                  </div>
+                </div>
+
+          </div>
+          </section>
+           <!-- div over -->
+            <!-- this div contains the language section of the page -->
+            <!-- "language class is common to both hindi and english sections" -->
+            <!-- in this way redundancy is handled. considering the re-usability of the code -->
+        
+            <!-- latest english songs div  -->
+            <section>
+            <div class="language-english">
+              <h1 class="language-heading">
+                Latest English
+              </h1>
+              <div class="language-content">
+
+                <div>
+                  <img src="https://media.pitchfork.com/photos/608839f84c67840074db8afb/1:1/w_3000,h_3000,c_limit/Billie-Eilish-Happier-Than-Ever.jpeg" >
+                  <p>Bad Boy</p>
+                  <p>2 May 2023</p>
+                </div>
+
+                <div>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Rihanna_-_Anti.png" >
+                    <p>Slowly</p>
+                    <p>2 May 2023</p>
+                  </div>
+
+                  <div>
+                      <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/02/28/17/screen-shot-2020-02-28-at-12.32.49-pm.png" >
+                      <p>Falling</p>
+                      <p>2 May 2023</p>
+                    </div>
+
+                    <div>
+                        <img src="https://variety.com/wp-content/uploads/2023/05/FIFTY-FIFTY_EX-BLOOM_GROUP.jpg?w=681&h=383&crop=1" >
+                        <p>Cupid</p>
+                        <p>2 May 2023</p>
+                      </div>
+
+                      <div>
+                          <img src="https://pbs.twimg.com/media/E_39-ErVgAQxIHx.jpg" >
+                          <p>Money</p>
+                          <p>2 May 2023</p>
+                        </div>
+
+                        <div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/c/cb/Pink_Venom_Cover.jpg" >
+                            <p>Tally</p>
+                            <p>2 May 2023</p>
+                          </div>
+
+              </div>
+            </div>
+</section>
+
+            <!-- Hindi language songs div -->
+            <section>
+            <div class="language-hindi">
+                <h1 class="language-heading">
+                  Latest Hindi
+                </h1>
+                <div class="language-content">
+  
+                  <div>
+                    <img src="https://c.saavncdn.com/480/Dangal-Hindi-2016-20200116120806-500x500.jpg" >
+                    <p>Naina</p>
+                    <p>2 May 2023</p>
+                  </div>
+  
+                  <div>
+                      <img src="https://images.hungama.com/c/1/2a7/8a3/1888009/1888009_700x394.jpg" >
+                      <p>Subhanallah</p>
+                      <p>2 May 2023</p>
+                    </div>
+  
+                    <div>
+                        <img src="https://c.saavncdn.com/530/Mickey-Virus-2013-500x500.jpg" >
+                        <p>Tose Naina</p>
+                        <p>2 May 2023</p>
+                      </div>
+  
+                      <div>
+                          <img src="https://c.saavncdn.com/784/Kalank-Hindi-2019-20200508163312-500x500.jpg" >
+                          <p>Kalank</p>
+                          <p>2 May 2023</p>
+                        </div>
+  
+                        <div>
+                            <img src="https://c.saavncdn.com/903/Tu-Jhoothi-Main-Makkaar-Hindi-2023-20230316165419-500x500.jpg" >
+                            <p>Bedardeya</p>
+                            <p>2 May 2023</p>
+                          </div>
+  
+                          <div>
+                              <img src="https://c.saavncdn.com/211/Shanghai-Hindi-2012-20221212054037-500x500.jpg" >
+                              <p>Dua</p>
+                              <p>2 May 2023</p>
+                            </div>
+  
+                </div>
+              </div>
+              </section>
+    </aside>
+     <!-- one aside section is complete -->
+        <!-- now the second aside section will start from here -->
+        <!-- the page is responsive. please try reducing the width of the page -->
+        <!-- the aside section will collapse and a "more button will be shown to you." -->
+        <!-- clicking on this more button, you will be shown the aside section 2  -->
+        <!-- its position will be absolute at lower resolutions -->
+
+        <!-- this is the label for that more button -->
+        <label for="more"><i class="fas fa-angle-double-left"></i>More</label>
+
+        <!-- this is that more button -->
+        <!-- and this is the check box. this will always be hidden -->
+        <!-- check the stylesheet_main.css when the label is clicked, this checkbox will be checked -->
+        <!-- which will invoke the aside section 2 on lower resolutions -->
+        <input type="checkbox" id="more">
+
+        <!-- here starts the section 2 of our page -->
+        <aside class="aside-section-2">
+          <!-- this is the heading of the section -->
+          <div class="heading">
+            <h1>Queue</h1>
+            <h4>
+              <a href="#queue-option-box"><i class="fa-solid fa-circle-chevron-down"></i></a>
+            </h4>
+          </div>
+          
+          <!-- this is the queue option box which when clicked will show three options that is playlists favourite songs and close button , the close button will close the queue option box -->
+          <div class="queue-options" id="queue-option-box">
+            <p>
+              <a href style="color: black; font-weight: bolder">Playlist</a>
+            </p>
+              <hr>
+              <p>
+                  <a href style="color: black; font-weight: bolder">Favourities</a>
+                </p>
+                  <hr>
+                  <p>
+                      <a href="#" style="color: red; font-weight: bolder">Close</a>
+                    </p>
+                    </div>
+
+                    <!-- this is the content shown inthe playlists -->
+                    <div class="playlist-content">
+                      <!-- first playlist item -->
+                      <div class="playlist-item">
+                        <div class="left-content">
+                          <!-- index -->
+                          <div style="margin-right: 4px; color:whitesmoke;">
+                            01
+                          </div>
+                          <div class="coverer">
+                               <!-- coverer class is for those items which when hovered will show an effect -->
+                            <!-- in this effect, when the user hovers on the item, it will show black background -->
+                            <!-- with opacity value less than 1 and a play button icon at the center -->
+                            <img src="https://www.nme.com/wp-content/uploads/2016/09/2014Coldplay_GhostStories600G030314.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+                        <!-- name and artist of the song -->
+                        <div style="color:white">
+                        <div>
+                          Alone
+                        </div>
+                        <p>Alan Walker</p>
+                        </div>
+                          </div>
+
+                           <!-- like button -->
+                        <div class="right-content">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        </div>
+
+                        <!-- second playlist item -->
+                        <div class="playlist-item">
+                            <div class="left-content">
+                              <!-- index -->
+                              <div style="margin-right: 4px; color:whitesmoke;">
+                                02
+                              </div>
+                              <div class="coverer">
+                                   <!-- coverer class is for those items which when hovered will show an effect -->
+                                <!-- in this effect, when the user hovers on the item, it will show black background -->
+                                <!-- with opacity value less than 1 and a play button icon at the center -->
+                                <img src="https://www.nme.com/wp-content/uploads/2016/09/2014Coldplay_GhostStories600G030314.jpg">
+                                <div class="play-button">
+                                    <i class="fas fa-play" aria-hidden="true"></i>
+                                </div>
+                            </div>
+    
+                            <!-- name and artist of the song -->
+                            <div style="color:white">
+                            <div>
+                              Alone
+                            </div>
+                            <p>Alan Walker</p>
+                            </div>
+                              </div>
+    
+                               <!-- like button -->
+                            <div class="right-content">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            </div>
+
+                            <!-- third playlist item -->
+                            <div class="playlist-item">
+                                <div class="left-content">
+                                  <!-- index -->
+                                  <div style="margin-right: 4px; color:whitesmoke;">
+                                    03
+                                  </div>
+                                  <div class="coverer">
+                                       <!-- coverer class is for those items which when hovered will show an effect -->
+                                    <!-- in this effect, when the user hovers on the item, it will show black background -->
+                                    <!-- with opacity value less than 1 and a play button icon at the center -->
+                                   <img src="https://www.nme.com/wp-content/uploads/2016/09/2014Coldplay_GhostStories600G030314.jpg">
+                                    <div class="play-button">
+                                        <i class="fas fa-play" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+        
+                                <!-- name and artist of the song -->
+                                <div style="color:white">
+                                <div>
+                                  Alone
+                                </div>
+                                <p>Alan Walker</p>
+                                </div>
+                                  </div>
+        
+                                   <!-- like button -->
+                                <div class="right-content">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                </div>
+
+                                <!-- fourth playlist item -->
+                                <div class="playlist-item">
+                                    <div class="left-content">
+                                      <!-- index -->
+                                      <div style="margin-right: 4px; color:whitesmoke;">
+                                        04
+                                      </div>
+                                      <div class="coverer">
+                                           <!-- coverer class is for those items which when hovered will show an effect -->
+                                        <!-- in this effect, when the user hovers on the item, it will show black background -->
+                                        <!-- with opacity value less than 1 and a play button icon at the center -->
+                                       <img src="https://www.nme.com/wp-content/uploads/2016/09/2014Coldplay_GhostStories600G030314.jpg">
+                                        <div class="play-button">
+                                            <i class="fas fa-play" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+            
+                                    <!-- name and artist of the song -->
+                                    <div style="color:white">
+                                    <div>
+                                      Alone
+                                    </div>
+                                    <p>Alan Walker</p>
+                                    </div>
+                                      </div>
+            
+                                       <!-- like button -->
+                                    <div class="right-content">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                    </div>
+                       
+                                    <!-- fifth playlist item -->
+                      <div class="playlist-item">
+                          <div class="left-content">
+                            <!-- index -->
+                            <div style="margin-right: 4px; color:whitesmoke;">
+                              05
+                            </div>
+                            <div class="coverer">
+                                 <!-- coverer class is for those items which when hovered will show an effect -->
+                              <!-- in this effect, when the user hovers on the item, it will show black background -->
+                              <!-- with opacity value less than 1 and a play button icon at the center -->
+                             <img src="https://www.nme.com/wp-content/uploads/2016/09/2014Coldplay_GhostStories600G030314.jpg">
+                              <div class="play-button">
+                                  <i class="fas fa-play" aria-hidden="true"></i>
+                              </div>
+                          </div>
+  
+                          <!-- name and artist of the song -->
+                          <div style="color:white">
+                          <div>
+                            Alone
+                          </div>
+                          <p>Alan Walker</p>
+                          </div>
+                            </div>
+  
+                             <!-- like button -->
+                          <div class="right-content">
+                              <i class="fa-solid fa-heart"></i>
+                          </div>
+                          </div>
+  
+                          <!-- sixth playlist item -->
+                          <div class="playlist-item">
+                              <div class="left-content">
+                                <!-- index -->
+                                <div style="margin-right: 4px; color:whitesmoke;">
+                                  06
+                                </div>
+                                <div class="coverer">
+                                     <!-- coverer class is for those items which when hovered will show an effect -->
+                                  <!-- in this effect, when the user hovers on the item, it will show black background -->
+                                  <!-- with opacity value less than 1 and a play button icon at the center -->
+                                 <img src="https://www.nme.com/wp-content/uploads/2016/09/2014Coldplay_GhostStories600G030314.jpg">
+                                  <div class="play-button">
+                                      <i class="fas fa-play" aria-hidden="true"></i>
+                                  </div>
+                              </div>
+      
+                              <!-- name and artist of the song -->
+                              <div style="color:white">
+                              <div>
+                                Alone
+                              </div>
+                              <p>Alan Walker</p>
+                              </div>
+                                </div>
+      
+                                 <!-- like button -->
+                              <div class="right-content">
+                                  <i class="fa-solid fa-heart"></i>
+                              </div>
+                              </div>
+  
+                              <!-- seventh playlist item -->
+                              <div class="playlist-item">
+                                  <div class="left-content">
+                                    <!-- index -->
+                                    <div style="margin-right: 4px; color:whitesmoke;">
+                                      07
+                                    </div>
+                                    <div class="coverer">
+                                         <!-- coverer class is for those items which when hovered will show an effect -->
+                                      <!-- in this effect, when the user hovers on the item, it will show black background -->
+                                      <!-- with opacity value less than 1 and a play button icon at the center -->
+                                     <img src="https://www.nme.com/wp-content/uploads/2016/09/2014Coldplay_GhostStories600G030314.jpg">
+                                      <div class="play-button">
+                                          <i class="fas fa-play" aria-hidden="true"></i>
+                                      </div>
+                                  </div>
+          
+                                  <!-- name and artist of the song -->
+                                  <div style="color:white">
+                                  <div>
+                                    Alone
+                                  </div>
+                                  <p>Alan Walker</p>
+                                  </div>
+                                    </div>
+          
+                                     <!-- like button -->
+                                  <div class="right-content">
+                                      <i class="fa-solid fa-heart"></i>
+                                  </div>
+                                  </div>
+  
+                                  <!-- eightth playlist item -->
+                                  <div class="playlist-item">
+                                      <div class="left-content">
+                                        <!-- index -->
+                                        <div style="margin-right: 4px; color:whitesmoke;">
+                                          08
+                                        </div>
+                                        <div class="coverer">
+                                             <!-- coverer class is for those items which when hovered will show an effect -->
+                                          <!-- in this effect, when the user hovers on the item, it will show black background -->
+                                          <!-- with opacity value less than 1 and a play button icon at the center -->
+                                         <img src="https://www.nme.com/wp-content/uploads/2016/09/2014Coldplay_GhostStories600G030314.jpg">
+                                          <div class="play-button">
+                                              <i class="fas fa-play" aria-hidden="true"></i>
+                                          </div>
+                                      </div>
+              
+                                      <!-- name and artist of the song -->
+                                      <div style="color:white">
+                                      <div>
+                                        Alone
+                                      </div>
+                                      <p>Alan Walker</p>
+                                      </div>
+                                        </div>
+              
+                                         <!-- like button -->
+                                      <div class="right-content">
+                                          <i class="fa-solid fa-heart"></i>
+                                      </div>
+                                      </div>
+
+                                      <!-- ninth playlist item -->
+                      <div class="playlist-item">
+                          <div class="left-content">
+                            <!-- index -->
+                            <div style="margin-right: 4px; color:whitesmoke;">
+                              09
+                            </div>
+                            <div class="coverer">
+                                 <!-- coverer class is for those items which when hovered will show an effect -->
+                              <!-- in this effect, when the user hovers on the item, it will show black background -->
+                              <!-- with opacity value less than 1 and a play button icon at the center -->
+                             <img src="https://www.nme.com/wp-content/uploads/2016/09/2014Coldplay_GhostStories600G030314.jpg">
+                              <div class="play-button">
+                                  <i class="fas fa-play" aria-hidden="true"></i>
+                              </div>
+                          </div>
+  
+                          <!-- name and artist of the song -->
+                          <div style="color:white">
+                          <div>
+                            Alone
+                          </div>
+                          <p>Alan Walker</p>
+                          </div>
+                            </div>
+  
+                             <!-- like button -->
+                          <div class="right-content">
+                              <i class="fa-solid fa-heart"></i>
+                          </div>
+                          </div>
+  
+                          <!-- tenth playlist item -->
+                          <div class="playlist-item">
+                              <div class="left-content">
+                                <!-- index -->
+                                <div style="margin-right: 4px; color:whitesmoke;">
+                                  10
+                                </div>
+                                <div class="coverer">
+                                     <!-- coverer class is for those items which when hovered will show an effect -->
+                                  <!-- in this effect, when the user hovers on the item, it will show black background -->
+                                  <!-- with opacity value less than 1 and a play button icon at the center -->
+                                 <img src="https://www.nme.com/wp-content/uploads/2016/09/2014Coldplay_GhostStories600G030314.jpg">
+                                  <div class="play-button">
+                                      <i class="fas fa-play" aria-hidden="true"></i>
+                                  </div>
+                              </div>
+      
+                              <!-- name and artist of the song -->
+                              <div style="color:white">
+                              <div>
+                                Alone
+                              </div>
+                              <p>Alan Walker</p>
+                              </div>
+                                </div>
+      
+                                 <!-- like button -->
+                              <div class="right-content">
+                                  <i class="fa-solid fa-heart"></i>
+                              </div>
+                              </div>
+  
+                              <!-- eleventh playlist item -->
+                              <div class="playlist-item">
+                                  <div class="left-content">
+                                    <!-- index -->
+                                    <div style="margin-right: 4px; color:whitesmoke;">
+                                      11
+                                    </div>
+                                    <div class="coverer">
+                                         <!-- coverer class is for those items which when hovered will show an effect -->
+                                      <!-- in this effect, when the user hovers on the item, it will show black background -->
+                                      <!-- with opacity value less than 1 and a play button icon at the center -->
+                                     <img src="https://www.nme.com/wp-content/uploads/2016/09/2014Coldplay_GhostStories600G030314.jpg">
+                                      <div class="play-button">
+                                          <i class="fas fa-play" aria-hidden="true"></i>
+                                      </div>
+                                  </div>
+          
+                                  <!-- name and artist of the song -->
+                                  <div style="color:white">
+                                  <div>
+                                    Alone
+                                  </div>
+                                  <p>Alan Walker</p>
+                                  </div>
+                                    </div>
+          
+                                     <!-- like button -->
+                                  <div class="right-content">
+                                      <i class="fa-solid fa-heart"></i>
+                                  </div>
+                                  </div>
+  
+                                  <!-- twelveth playlist item -->
+                                  <div class="playlist-item">
+                                      <div class="left-content">
+                                        <!-- index -->
+                                        <div style="margin-right: 4px; color:whitesmoke;">
+                                          12
+                                        </div>
+                                        <div class="coverer">
+                                             <!-- coverer class is for those items which when hovered will show an effect -->
+                                          <!-- in this effect, when the user hovers on the item, it will show black background -->
+                                          <!-- with opacity value less than 1 and a play button icon at the center -->
+                                         <img src="https://www.nme.com/wp-content/uploads/2016/09/2014Coldplay_GhostStories600G030314.jpg">
+                                          <div class="play-button">
+                                              <i class="fas fa-play" aria-hidden="true"></i>
+                                          </div>
+                                      </div>
+              
+                                      <!-- name and artist of the song -->
+                                      <div style="color:white">
+                                      <div>
+                                        Alone
+                                      </div>
+                                      <p>Alan Walker</p>
+                                      </div>
+                                        </div>
+              
+                                         <!-- like button -->
+                                      <div class="right-content">
+                                          <i class="fa-solid fa-heart"></i>
+                                      </div>
+                                      </div>
+
+                                      <!-- thirteenth playlist item -->
+                      <div class="playlist-item">
+                          <div class="left-content">
+                            <!-- index -->
+                            <div style="margin-right: 4px; color:whitesmoke;">
+                              13
+                            </div>
+                            <div class="coverer">
+                                 <!-- coverer class is for those items which when hovered will show an effect -->
+                              <!-- in this effect, when the user hovers on the item, it will show black background -->
+                              <!-- with opacity value less than 1 and a play button icon at the center -->
+                             <img src="https://www.nme.com/wp-content/uploads/2016/09/2014Coldplay_GhostStories600G030314.jpg">
+                              <div class="play-button">
+                                  <i class="fas fa-play" aria-hidden="true"></i>
+                              </div>
+                          </div>
+  
+                          <!-- name and artist of the song -->
+                          <div style="color:white">
+                          <div>
+                            Alone
+                          </div>
+                          <p>Alan Walker</p>
+                          </div>
+                            </div>
+  
+                             <!-- like button -->
+                          <div class="right-content">
+                              <i class="fa-solid fa-heart"></i>
+                          </div>
+                          </div>
+  
+                          <!-- fourteenth playlist item -->
+                          <div class="playlist-item">
+                              <div class="left-content">
+                                <!-- index -->
+                                <div style="margin-right: 4px; color:whitesmoke;">
+                                  14
+                                </div>
+                                <div class="coverer">
+                                     <!-- coverer class is for those items which when hovered will show an effect -->
+                                  <!-- in this effect, when the user hovers on the item, it will show black background -->
+                                  <!-- with opacity value less than 1 and a play button icon at the center -->
+                                 <img src="https://www.nme.com/wp-content/uploads/2016/09/2014Coldplay_GhostStories600G030314.jpg">
+                                  <div class="play-button">
+                                      <i class="fas fa-play" aria-hidden="true"></i>
+                                  </div>
+                              </div>
+      
+                              <!-- name and artist of the song -->
+                              <div style="color:white">
+                              <div>
+                                Alone
+                              </div>
+                              <p>Alan Walker</p>
+                              </div>
+                                </div>
+      
+                                 <!-- like button -->
+                              <div class="right-content">
+                                  <i class="fa-solid fa-heart"></i>
+                              </div>
+                              </div>
+  
+                              <!-- fifteenth playlist item -->
+                              <div class="playlist-item">
+                                  <div class="left-content">
+                                    <!-- index -->
+                                    <div style="margin-right: 4px; color:whitesmoke;">
+                                      15
+                                    </div>
+                                    <div class="coverer">
+                                         <!-- coverer class is for those items which when hovered will show an effect -->
+                                      <!-- in this effect, when the user hovers on the item, it will show black background -->
+                                      <!-- with opacity value less than 1 and a play button icon at the center -->
+                                     <img src="https://www.nme.com/wp-content/uploads/2016/09/2014Coldplay_GhostStories600G030314.jpg">
+                                      <div class="play-button">
+                                          <i class="fas fa-play" aria-hidden="true"></i>
+                                      </div>
+                                  </div>
+          
+                                  <!-- name and artist of the song -->
+                                  <div style="color:white">
+                                  <div>
+                                    Alone
+                                  </div>
+                                  <p>Alan Walker</p>
+                                  </div>
+                                    </div>
+          
+                                     <!-- like button -->
+                                  <div class="right-content">
+                                      <i class="fa-solid fa-heart"></i>
+                                  </div>
+                                  </div>
+  
+                                  <!-- sixteenth playlist item -->
+                                  <div class="playlist-item">
+                                      <div class="left-content">
+                                        <!-- index -->
+                                        <div style="margin-right: 4px; color:whitesmoke;">
+                                          16
+                                        </div>
+                                        <div class="coverer">
+                                             <!-- coverer class is for those items which when hovered will show an effect -->
+                                          <!-- in this effect, when the user hovers on the item, it will show black background -->
+                                          <!-- with opacity value less than 1 and a play button icon at the center -->
+                                         <img src="https://www.nme.com/wp-content/uploads/2016/09/2014Coldplay_GhostStories600G030314.jpg">
+                                          <div class="play-button">
+                                              <i class="fas fa-play" aria-hidden="true"></i>
+                                          </div>
+                                      </div>
+              
+                                      <!-- name and artist of the song -->
+                                      <div style="color:white">
+                                      <div>
+                                        Alone
+                                      </div>
+                                      <p>Alan Walker</p>
+                                      </div>
+                                        </div>
+              
+                                         <!-- like button -->
+                                      <div class="right-content">
+                                          <i class="fa-solid fa-heart"></i>
+                                      </div>
+                                      </div>
+                      </div>
+                           
+        </aside>
+</main>
+
+<!-- The main part of the webpage is complete -->
+<!-- ////////////////////////////////////////////////// -->
+
+<!-- This is the footer part and it will be fixed in the screen below -->
+<footer>
+
+  <div class="active-song-description">
+    <!-- song image -->
+  <div id="song-image">
+    <img src="https://www.nme.com/wp-content/uploads/2016/09/2014Coldplay_GhostStories600G030314.jpg">
+  </div>
+
+  <!-- song name and author -->
+  <div class="song-desc">
+    <div>
+      Imagine by john
+    </div>
+    <div>
+        John Lenon
+      </div>
+  </div>
+      <!-- heart icon and ban icon -->
+      <div class="heart-and-ban-icon">
+        <span><i class="fa-solid fa-heart"></i></span>
+          <span><i class="fa-solid fa-ban"></i></span>
+      </div>
+
+  </div>   
+
+    <!-- this the control section of the player -->
+    <div class="player">
+      <div class="controls">
+          <div><i class="fas fa-random"></i></div>
+          <div><i class="fas fa-step-backward"></i></div>
+          <div><i class="fas fa-pause-circle"></i></div>
+          <div><i class="fas fa-step-forward"></i></div>
+          <div><i class="fas fa-redo"></i></div>
+
+      </div>
+
+      <!-- this is slider -->
+      <div id="slider">
+        <!-- current time -->
+        <div class="time">
+          1:39
+        </div>
+
+        <div class="slidecontainer">
+          <input type="range" class="slider" id="myRange" min="0" max="100" value="0">
+
+        </div>
+        <!-- total time of the song -->
+        <div class="time">
+          4:44
+        </div>
+      </div>
+    </div>
+
+    <!-- other icons including the volume slider and all  -->
+    <div class="extras">
+        <div>
+            <i class="fas fa-list-ul"></i>
+        </div>
+        <div>
+            <i class="fas fa-laptop"></i>
+        </div>
+        <div>
+            <i class="fas fa-volume-up"></i>
+        </div>
+        <div class="slidecontainer" style="width:30%;">
+            <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+        </div>
+        <div>
+            <i class="fas fa-expand-alt"></i>
+        </div>
+    </div>
+
+  
+
+</footer>
+  </body>
+
+  <script src="script.js"></script>
+</html>
